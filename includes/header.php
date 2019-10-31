@@ -19,16 +19,16 @@
             if(isset($_SESSION['username'])){
             ?>
                 <li class="nav-item <?php if($_SERVER['PHP_SELF']=="/compte.php"){echo "active";}?>">
-                    <a class="nav-link" href="compte.php">Account <?php if($_SERVER['PHP_SELF']=="/compte.php"){echo '<span class="sr-only">(current)</span>';}?></a>
+                    <a class="btn btn-secondary" href="compte.php">Account <?php if($_SERVER['PHP_SELF']=="/compte.php"){echo '<span class="sr-only">(current)</span>';}?></a>
                 </li>
                 <li class="nav-item <?php if($_SERVER['PHP_SELF']=="/disconnect.php"){echo "active";}?>">
-                    <a class="nav-link" href="disconnect.php">Disconnect <?php if($_SERVER['PHP_SELF']=="/disconnect.php"){echo '<span class="sr-only">(current)</span>';}?></a>
+                    <a class="btn btn-danger" href="disconnect.php">Disconnect <?php if($_SERVER['PHP_SELF']=="/disconnect.php"){echo '<span class="sr-only">(current)</span>';}?></a>
                 </li>
             <?php
             }else{
             ?>
                 <li class="nav-item <?php if($_SERVER['PHP_SELF']=="/login.php"){echo "active";}?>">
-                    <a class="nav-link" href="login.php">Login <?php if($_SERVER['PHP_SELF']=="/login.php"){echo '<span class="sr-only">(current)</span>';}?></a>
+                    <a class="btn btn-secondary" href="login.php">Login <?php if($_SERVER['PHP_SELF']=="/login.php"){echo '<span class="sr-only">(current)</span>';}?></a>
                 </li>
             <?php
             }

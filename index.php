@@ -26,7 +26,7 @@
     <div class="card-body">
         <h5 class="card-title">Welcome to <?php echo SITE_TITLE ?></h5>
         <p class="card-text">This is a IT Akademy project.</p>
-        <p>This is the <h2><?php echo $_COOKIE['indexOpen']; ?></h2> times you visit this page</p>
+        <p>This is the <?php echo $_COOKIE['indexOpen']+1; ?> times you visit this page</p>
     </div>
 </body>
 
